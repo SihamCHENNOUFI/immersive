@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="asset/css/style.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <title>Immersive Nature</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="container-fluid d-flex justify-content-center" id="navbar">
+      <nav class="navbar navbar-expand-lg p-4">
+        <div class="container-fluid col-lg-6 mx-5">
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon "></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center">
+              <li class="nav-item">
+                <button type="button" class="btn text-light" data-bs-toggle="modal" data-bs-target="#">
+                  Accueil
+                </button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="btn text-light" data-bs-toggle="modal" data-bs-target="#">
+                  Nouveauté
+                </button>
+              </li>
+              <li class="nav-item dropdown">
+              </li>
+              <li class="nav-item">
+                <button type="button" class="btn text-light" data-bs-toggle="modal" data-bs-target="#">
+                  Circuit
+                </button>
+              </li>
+              <button type="button" class="btn text-light" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Contact
+              </button>
+
+              <!-- Modal -->
+              <div class="modal fade bg-transparent" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header bg-light">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Contact</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body bg-light">
+                      <form action="formulaire">
+                        <fieldset id="part-1">
+                          <legend id="identite-legend">Formulaire de contact</legend>
+                          <ol>
+                            <li>
+                              <label for="name">Nom:</label>
+                              <input type="text" name="surname" id="name" value="Nom" />
+                            </li>
+                            <li>
+                              <label for="surname">Prénom:</label>
+                              <input type="text" name="name" id="prénom" value="Prénom" />
+                            </li>
+                            <li>
+                              <label for="mail">Adresse mail:</label>
+                              <input type="text" name="mail" id="mail" value="Adresse mail" />
+                            </li>
+                            <li>
+                              <label class="adress" for="adress">Message:</label>
+                              <textarea name="message" id="messsage" cols="30" rows="10" value="Votre message ici">
+                            </textarea>
+                            </li>
+                          </ol>
+                          <input id="submit" type="submit" value="Envoyer" />
+                        </fieldset>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-success">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div>
+      <header>
+        <img src="asset/img/immersive_nature_logo WHITE.png WHITE.png" alt="Immersive Nature - Logo" />
+      </header>
+    </div>
+    <section class="slider">
+      <div class="container-fluid d-flex justify-content-center text-left">
+        <div style="width: 50%;">
+          <p id="paragraphein" class="text-light"><span class="fs-4">C</span>omme une envie de s’évader au grand air, de
+            sentir les odeurs
+            de la nature, d’écouter le bruit du vent dans les feuilles… Des plaisirs simples dont on rêve tant ! Pour
+            les
+            retrouver, rien ne vaut une bonne promenade en forêt, loin des sites touristiques bondés et des sentiers
+            battus. Immersive Nature vous propose des excursions inédites au cœur de la forêt domaniale de Compiègne.
+          </p>
+        </div>
+      </div>
+      <div id="carouselExampleIndicators" class="carousel slide-success" data-bs-ride="true">
+        <div class="carousel-indicators bg-transparent">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+            aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="asset/img/Forêt2.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="asset/img/Vélo.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="asset/img/Rivère.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="asset/img/Forêt1.png" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <div class="cardcardcard">
+      <div class="row row-cols-1 row-cols-md-2 g-4 col-sm-12">
+        <div class="col">
+          <div class="card border border-5 border-white px-0 h-100">
+            <div class="row g-0 h-100">
+              <div class="col-md-6 h-100">
+                <img src="asset/img/Péniche.png" class="card-img h-100 rounded-start" alt="péniche">
+              </div>
+              <div class=" cardone col-md-6 col-sm-12">
+                <div class="card-body">
+                  <h3 class=" card-title text-light fw-bold text-center fs-4 m-2 p-4">nouveautés</h3>
+                  <p class=" card-text ">Vous n'avez pas trouvé votre excursion idéale pour votre prochaine
+                    ballade ou vous avez des souhaits particuliers ? Nous nous ferons un plaisir d'organiser
+                    avec vous votre excursion inoubliable en fonction de vos souhaits et de votre budget.
+                    Contactez-nous simplement en utilisant le formulaire réservé et nous vous répondrons
+                    très rapidement avec nos propositions.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 border border-5 border-white px-0">
+            <div class="row g-0">
+              <div class="col-md-6 h-80">
+                <img src="asset/img/Forêt.png" class="card-img h-100 rounded-start" alt="forêt">
+              </div>
+              <div class="col-md-6 col-sm-12 couleur">
+                <div class="card-body">
+                  <h3 class=" card-title fw-bold text-light text-center fs-4 m-2 p-4">nos circuits</h3>
+                  <p class=" card-text ">D’abord réservée au bon plaisir des seigneurs et des chasseurs à courre, la
+                    forêt
+                    de Compiègne est aujourd’hui le refuge de nombreux promeneurs. Son
+                    domaine presque millénaire, l’armistice de 1918 signée à l’ombre de ses grands arbres,
+                    son fameux chêne Saint-Jean, ses magnifiques voies qui sillonnent les futaies de hêtres
+                    : elle a tout pour plaire. Pour votre balade en forêt, vous aurez le choix parmi plus de
+                    mille kilomètres de sentiers aménagés. Si vous êtes chanceux, peut-être y
+                    apercevrez-vous quelques daims, cerfs ou ratons-laveurs</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="row bg-light" id="Container">
+        <div class="col-md-4 mx-auto" id="footer">
+          <h2>contact</h2>
+          <p class="contact bg-light">contacts@immersivenature.fr</p>
+          <p class="contact bg-light">Compiegne</p>
+          <p class="contact bg-light">© Immersive Nature tout droits réservés 2022</p>
+
+        </div>
+        <div class="col-md-3 col-sm-12 d-flex justify-content-center bg-light col">
+          <img class="my-auto" src="asset/img/immersive_nature_logo_2.png" style="width: 30% ; height: 50%;"
+            alt="Logo immersive nature">
+        </div>
+        <div class="col-md-4 col-sm-12 bg-light mx-auto" id="ML">
+          <h2>
+            Crédits
+          </h2>
+          <div class="bg-light mx-auto">
+            <p class="bg-light">Source photo: Photos, illustrations, vecteurs et vidéos libres de droits | Adobe Stock
+              Source icône: Material Symbols and Icons - Google Fonts Source logo:
+              https://www.linkedin.com/in/eddy-philippo-74b7381b5/</p>
+            <a href="../immersive nature BOOTSTRAP/cgv.html" id="cguin">
+              <p class="bg-light" id="cgu">Mentions légales</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
